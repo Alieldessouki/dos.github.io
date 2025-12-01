@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Dos · The things you should do</title>
+    <meta
+      name="description"
+      content="Dos is a calm SwiftUI task manager that keeps your lists, mic capture, and calendar view in sync offline."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Dos</p>
+        <h1>The things you should do, in one focused place.</h1>
+        <p class="lede">
+          Group tasks with emoji, dictate new items, and jump into a just-in-time
+          calendar view without ever worrying about sync or accounts. Dos keeps
+          everything local, fast, and beautiful.
+        </p>
+        <div class="cta-group">
+          <a
+            class="cta cta--primary"
+            href="https://apps.apple.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Download on the App Store</a
+          >
+          <a class="cta cta--ghost" href="#privacy">Read the Privacy Policy</a>
+        </div>
+      </div>
+      <div class="hero__preview" aria-hidden="true">
+        <div class="list-card">
+          <div>
+            <p class="list-card__title">Groceries</p>
+            <p class="list-card__meta">3/8 tasks</p>
+          </div>
+          <div class="progress">
+            <span class="progress__value" style="width: 38%"></span>
+          </div>
+        </div>
+        <div class="list-card list-card--raised">
+          <div>
+            <p class="list-card__title">Weekend chores</p>
+            <p class="list-card__meta">1/5 tasks</p>
+          </div>
+          <div class="progress">
+            <span class="progress__value" style="width: 18%"></span>
+          </div>
+        </div>
+        <div class="list-card">
+          <div>
+            <p class="list-card__title">Work</p>
+            <p class="list-card__meta">7/7 tasks</p>
+          </div>
+          <div class="progress">
+            <span class="progress__value progress__value--complete"></span>
+          </div>
+        </div>
+        <button class="floating-plus" type="button" aria-label="Add a list">
+          +
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-grid">
+        <article class="feature-card">
+          <h2>Offline-first</h2>
+          <p>
+            Dos keeps every list and task stored securely on your device via
+            Core Data. There is no account to manage or cloud sync to wait for,
+            so you can keep working on flights or with no connection at all.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>Delightful capture</h2>
+          <p>
+            Hold the mic button to dictate tasks, keep optional details and due
+            dates close at hand, and celebrate progress with haptics and
+            confetti when a list hits 100%.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>Calendar at a glance</h2>
+          <p>
+            A floating calendar button appears only when you have due tasks.
+            Tap it from any screen to see upcoming work grouped by day so you
+            can stay ahead.
+          </p>
+        </article>
+      </section>
+
+      <section class="privacy" id="privacy">
+        <div class="privacy__card">
+          <p class="eyebrow">Effective December 01, 2025</p>
+          <h2>Privacy Policy</h2>
+          <p>
+            Dos is designed to keep your personal information on your device.
+            This policy describes how the app handles the data you create while
+            managing tasks and lists.
+          </p>
+
+          <h3>Information we collect</h3>
+          <ul>
+            <li>
+              <strong>Task &amp; list content.</strong> Titles, optional details,
+              emojis, and due dates are saved locally in Core Data. They are
+              never transmitted to Instabug or external services.
+            </li>
+            <li>
+              <strong>Speech dictation.</strong> When you hold the microphone
+              button, iOS speech recognition converts your voice into text. The
+              transcription is processed by Apple in accordance with your system
+              settings and returned only to the app for insertion into the task
+              field. Dos does not store audio or transcripts beyond your saved
+              tasks.
+            </li>
+            <li>
+              <strong>App diagnostics.</strong> Dos does not include analytics,
+              crash reporting, or advertising SDKs.
+            </li>
+          </ul>
+
+          <h3>How your information is used</h3>
+          <p>
+            Task and list data is used solely to display, sort, and sync content
+            inside the app experience—lists, task detail, calendar view, and the
+            celebratory completion screen. There is no server-side processing or
+            aggregation.
+          </p>
+
+          <h3>Data storage &amp; retention</h3>
+          <p>
+            All data remains on your device until you delete it or uninstall the
+            app. Removing a list permanently removes its tasks. Deleting the app
+            removes all associated data from your device.
+          </p>
+
+          <h3>Third parties</h3>
+          <p>
+            Dos does not share information with third parties. The only external
+            service touched is Apple’s speech recognition framework, which
+            follows Apple’s privacy commitments.
+          </p>
+
+          <h3>Security</h3>
+          <p>
+            Because Dos relies on Apple’s hardened storage technologies, your
+            content benefits from the same device-level encryption and biometric
+            protections that secure the rest of iOS.
+          </p>
+
+          <h3>Your choices</h3>
+          <ul>
+            <li>
+              Delete any list or task at any time using in-app controls to
+              remove data immediately from local storage.
+            </li>
+            <li>
+              Disable speech recognition in iOS settings if you prefer not to
+              use dictation.
+            </li>
+          </ul>
+
+          <h3>Children’s privacy</h3>
+          <p>
+            Dos is intended for individuals 13 years of age or older. We do not
+            knowingly collect personal information from children.
+          </p>
+
+          <h3>Contact</h3>
+          <p>
+            Questions about this policy? Reach us at
+            <a href="mailto:hello@dosapp.example">hello@dosapp.example</a> and
+            we’ll be happy to help.
+          </p>
+
+          <p class="footnote">
+            We may update this policy as the app evolves. The “Effective” date
+            above reflects the latest revision.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
