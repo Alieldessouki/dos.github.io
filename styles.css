@@ -39,6 +39,7 @@ a {
 
 .hero__content h1 {
   font-size: clamp(2.3rem, 4vw, 3rem);
+  white-space: nowrap;
   line-height: 1.15;
   margin: 0.5rem 0 1rem;
 }
@@ -98,17 +99,6 @@ a {
   background: transparent;
 }
 
-.cta--plus {
-  width: 64px;
-  height: 64px;
-  border-radius: 20px;
-  padding: 0;
-  background: var(--color-deep-teal);
-  color: #fff;
-  font-size: 2rem;
-  box-shadow: 0 12px 30px rgba(40, 75, 99, 0.25);
-  pointer-events: none;
-}
 
 .hero__preview {
   position: relative;
