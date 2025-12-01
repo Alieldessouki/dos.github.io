@@ -98,6 +98,18 @@ a {
   background: transparent;
 }
 
+.cta--plus {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  padding: 0;
+  background: var(--color-deep-teal);
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: 0 12px 30px rgba(40, 75, 99, 0.25);
+  pointer-events: none;
+}
+
 .hero__preview {
   position: relative;
   padding: 2rem clamp(1rem, 3vw, 2.5rem);
